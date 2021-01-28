@@ -32,7 +32,7 @@ app.get('/collection/:collectionName', (req, res) => {
         if (e) return next(e)
         res.send(results)
     }) 
-})
+}) 
 
 // retreive an object by mongodb ID
 const ObjectID = require('mongodb').ObjectID;
