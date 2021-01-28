@@ -31,7 +31,7 @@ app.get('/collection/:collectionName', (req, res) => {
     req.collection.find({}).toArray((e, results) => {
         if (e) return next(e)
         res.send(results)
-    })
+    }) 
 })
 
 // retreive an object by mongodb ID
