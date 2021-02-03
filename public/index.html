@@ -5,7 +5,13 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="stylesheet.css">
       <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link rel="manifest" href="petstore.webmanifest">
       <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+      <script>
+         if ('serviceWorker' in navigator) {
+             navigator.serviceWorker.register('service-worker.js');
+         };
+     </script>
    </head>
    <body>
       <div id="app">
